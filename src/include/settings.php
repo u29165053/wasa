@@ -1,0 +1,8 @@
+<?php 
+
+define('DB_USERNAME_EXISTS', -9267607034);
+define('DB_EMAIL_EXISTS', -6988127435);
+define('DB_ANALYSIS_EXISTS', -4179437438)
+
+
+ ?>

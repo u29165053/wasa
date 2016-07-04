@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \FontLib
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">WASA</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Dompdf.html">Dompdf</a></li>
+                                                                        <li><a href="../namespaces/Svg.html">Svg</a></li>
+                                                                        <li><a href="../namespaces/FontLib.html">FontLib</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Namespaces
+                </li>
+                <a href="../namespaces/FontLib.html" title="FontLib">
+                    <i class="icon-th"></i> FontLib
+                </a>
+                <ul class="nav nav-list nav-namespaces">
+                        
+        <li>
+        <a href="../namespaces/FontLib.EOT.html" title="EOT">
+            <i class="icon-th"></i> EOT
+        </a>
+        <ul class="nav nav-list nav-namespaces">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../namespaces/FontLib.Glyph.html" title="Glyph">
+            <i class="icon-th"></i> Glyph
+        </a>
+        <ul class="nav nav-list nav-namespaces">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../namespaces/FontLib.OpenType.html" title="OpenType">
+            <i class="icon-th"></i> OpenType
+        </a>
+        <ul class="nav nav-list nav-namespaces">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../namespaces/FontLib.Table.html" title="Table">
+            <i class="icon-th"></i> Table
+        </a>
+        <ul class="nav nav-list nav-namespaces">
+                
+        <li>
+        <a href="../namespaces/FontLib.Table.Type.html" title="Type">
+            <i class="icon-th"></i> Type
+        </a>
+        <ul class="nav nav-list nav-namespaces">
+                
+    
+        </ul>
+    </li>
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../namespaces/FontLib.TrueType.html" title="TrueType">
+            <i class="icon-th"></i> TrueType
+        </a>
+        <ul class="nav nav-list nav-namespaces">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../namespaces/FontLib.WOFF.html" title="WOFF">
+            <i class="icon-th"></i> WOFF
+        </a>
+        <ul class="nav nav-list nav-namespaces">
+                
+    
+        </ul>
+    </li>
+    
+                </ul>
+            </ul>
+        </div>
+
+        <div class="span8 namespace-contents">
+                
+    
+        <ul class="breadcrumb">
+            <li><a href="../index.html"><i class="icon-th"></i></a></li>
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.html">FontLib</a>
+    </li>
+
+        </ul>
+
+        
+        
+                    <div class="namespace-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="class_AdobeFontMetrics" class="element ajax clickable class" data-toggle="collapse" data-target="#class_AdobeFontMetrics .collapse">
+        <h1>AdobeFontMetrics<a href="../classes/FontLib.AdobeFontMetrics.html">¶</a></h1>
+        <p class="short_description">Adobe Font Metrics file creation utility class.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.AdobeFontMetrics.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_Autoloader" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Autoloader .collapse">
+        <h1>Autoloader<a href="../classes/FontLib.Autoloader.html">¶</a></h1>
+        <p class="short_description">Autoloads FontLib classes</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Autoloader.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_BinaryStream" class="element ajax clickable class" data-toggle="collapse" data-target="#class_BinaryStream .collapse">
+        <h1>BinaryStream<a href="../classes/FontLib.BinaryStream.html">¶</a></h1>
+        <p class="short_description">Generic font file binary stream.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.BinaryStream.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_EncodingMap" class="element ajax clickable class" data-toggle="collapse" data-target="#class_EncodingMap .collapse">
+        <h1>EncodingMap<a href="../classes/FontLib.EncodingMap.html">¶</a></h1>
+        <p class="short_description">Encoding map used to map a code point to a Unicode char.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.EncodingMap.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_Font" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Font .collapse">
+        <h1>Font<a href="../classes/FontLib.Font.html">¶</a></h1>
+        <p class="short_description">Generic font file.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Font.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_Header" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Header .collapse">
+        <h1>Header<a href="../classes/FontLib.Header.html">¶</a></h1>
+        <p class="short_description">Font header container.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Header.html" class="more">« More »</a>    </div>
+
+                            </div>
+            
+                
+    
+        <ul class="breadcrumb">
+            <li><a href="../index.html"><i class="icon-th"></i></a></li>
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.html">FontLib</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.Glyph.html">Glyph</a>
+    </li>
+
+        </ul>
+
+        
+        
+                    <div class="namespace-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="class_Outline" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Outline .collapse">
+        <h1>Outline<a href="../classes/FontLib.Glyph.Outline.html">¶</a></h1>
+        <p class="short_description">`glyf` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Glyph.Outline.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_OutlineComponent" class="element ajax clickable class" data-toggle="collapse" data-target="#class_OutlineComponent .collapse">
+        <h1>OutlineComponent<a href="../classes/FontLib.Glyph.OutlineComponent.html">¶</a></h1>
+        <p class="short_description">Glyph outline component</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Glyph.OutlineComponent.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_OutlineComposite" class="element ajax clickable class" data-toggle="collapse" data-target="#class_OutlineComposite .collapse">
+        <h1>OutlineComposite<a href="../classes/FontLib.Glyph.OutlineComposite.html">¶</a></h1>
+        <p class="short_description">Composite glyph outline</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Glyph.OutlineComposite.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_OutlineSimple" class="element ajax clickable class" data-toggle="collapse" data-target="#class_OutlineSimple .collapse">
+        <h1>OutlineSimple<a href="../classes/FontLib.Glyph.OutlineSimple.html">¶</a></h1>
+        <p class="short_description">`glyf` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Glyph.OutlineSimple.html" class="more">« More »</a>    </div>
+
+                            </div>
+            
+    
+                
+    
+        <ul class="breadcrumb">
+            <li><a href="../index.html"><i class="icon-th"></i></a></li>
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.html">FontLib</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.EOT.html">EOT</a>
+    </li>
+
+        </ul>
+
+        
+        
+                    <div class="namespace-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="class_File" class="element ajax clickable class" data-toggle="collapse" data-target="#class_File .collapse">
+        <h1>File<a href="../classes/FontLib.EOT.File.html">¶</a></h1>
+        <p class="short_description">EOT font file.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.EOT.File.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_Header" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Header .collapse">
+        <h1>Header<a href="../classes/FontLib.EOT.Header.html">¶</a></h1>
+        <p class="short_description">TrueType font file header.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.EOT.Header.html" class="more">« More »</a>    </div>
+
+                            </div>
+            
+    
+                
+    
+        <ul class="breadcrumb">
+            <li><a href="../index.html"><i class="icon-th"></i></a></li>
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.html">FontLib</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.OpenType.html">OpenType</a>
+    </li>
+
+        </ul>
+
+        
+        
+                    <div class="namespace-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="class_File" class="element ajax clickable class" data-toggle="collapse" data-target="#class_File .collapse">
+        <h1>File<a href="../classes/FontLib.OpenType.File.html">¶</a></h1>
+        <p class="short_description">Open Type font, the same as a TrueType one.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.OpenType.File.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_TableDirectoryEntry" class="element ajax clickable class" data-toggle="collapse" data-target="#class_TableDirectoryEntry .collapse">
+        <h1>TableDirectoryEntry<a href="../classes/FontLib.OpenType.TableDirectoryEntry.html">¶</a></h1>
+        <p class="short_description">Open Type Table directory entry, the same as a TrueType one.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.OpenType.TableDirectoryEntry.html" class="more">« More »</a>    </div>
+
+                            </div>
+            
+    
+                
+    
+        <ul class="breadcrumb">
+            <li><a href="../index.html"><i class="icon-th"></i></a></li>
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.html">FontLib</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.WOFF.html">WOFF</a>
+    </li>
+
+        </ul>
+
+        
+        
+                    <div class="namespace-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="class_File" class="element ajax clickable class" data-toggle="collapse" data-target="#class_File .collapse">
+        <h1>File<a href="../classes/FontLib.WOFF.File.html">¶</a></h1>
+        <p class="short_description">WOFF font file.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.WOFF.File.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_Header" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Header .collapse">
+        <h1>Header<a href="../classes/FontLib.WOFF.Header.html">¶</a></h1>
+        <p class="short_description">WOFF font file header.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.WOFF.Header.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_TableDirectoryEntry" class="element ajax clickable class" data-toggle="collapse" data-target="#class_TableDirectoryEntry .collapse">
+        <h1>TableDirectoryEntry<a href="../classes/FontLib.WOFF.TableDirectoryEntry.html">¶</a></h1>
+        <p class="short_description">WOFF font file table directory entry.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.WOFF.TableDirectoryEntry.html" class="more">« More »</a>    </div>
+
+                            </div>
+            
+    
+                
+    
+        <ul class="breadcrumb">
+            <li><a href="../index.html"><i class="icon-th"></i></a></li>
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.html">FontLib</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.Table.html">Table</a>
+    </li>
+
+        </ul>
+
+        
+        
+                    <div class="namespace-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="class_DirectoryEntry" class="element ajax clickable class" data-toggle="collapse" data-target="#class_DirectoryEntry .collapse">
+        <h1>DirectoryEntry<a href="../classes/FontLib.Table.DirectoryEntry.html">¶</a></h1>
+        <p class="short_description">Generic Font table directory entry.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.DirectoryEntry.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_Table" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Table .collapse">
+        <h1>Table<a href="../classes/FontLib.Table.Table.html">¶</a></h1>
+        <p class="short_description">Generic font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Table.html" class="more">« More »</a>    </div>
+
+                            </div>
+            
+                
+    
+        <ul class="breadcrumb">
+            <li><a href="../index.html"><i class="icon-th"></i></a></li>
+                
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.html">FontLib</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.Table.html">Table</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.Table.Type.html">Type</a>
+    </li>
+
+        </ul>
+
+        
+        
+                    <div class="namespace-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="class_cmap" class="element ajax clickable class" data-toggle="collapse" data-target="#class_cmap .collapse">
+        <h1>cmap<a href="../classes/FontLib.Table.Type.cmap.html">¶</a></h1>
+        <p class="short_description">`cmap` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.cmap.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_glyf" class="element ajax clickable class" data-toggle="collapse" data-target="#class_glyf .collapse">
+        <h1>glyf<a href="../classes/FontLib.Table.Type.glyf.html">¶</a></h1>
+        <p class="short_description">`glyf` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.glyf.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_head" class="element ajax clickable class" data-toggle="collapse" data-target="#class_head .collapse">
+        <h1>head<a href="../classes/FontLib.Table.Type.head.html">¶</a></h1>
+        <p class="short_description">`head` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.head.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_hhea" class="element ajax clickable class" data-toggle="collapse" data-target="#class_hhea .collapse">
+        <h1>hhea<a href="../classes/FontLib.Table.Type.hhea.html">¶</a></h1>
+        <p class="short_description">`hhea` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.hhea.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_hmtx" class="element ajax clickable class" data-toggle="collapse" data-target="#class_hmtx .collapse">
+        <h1>hmtx<a href="../classes/FontLib.Table.Type.hmtx.html">¶</a></h1>
+        <p class="short_description">`hmtx` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.hmtx.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_kern" class="element ajax clickable class" data-toggle="collapse" data-target="#class_kern .collapse">
+        <h1>kern<a href="../classes/FontLib.Table.Type.kern.html">¶</a></h1>
+        <p class="short_description">`kern` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.kern.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_loca" class="element ajax clickable class" data-toggle="collapse" data-target="#class_loca .collapse">
+        <h1>loca<a href="../classes/FontLib.Table.Type.loca.html">¶</a></h1>
+        <p class="short_description">`loca` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.loca.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_maxp" class="element ajax clickable class" data-toggle="collapse" data-target="#class_maxp .collapse">
+        <h1>maxp<a href="../classes/FontLib.Table.Type.maxp.html">¶</a></h1>
+        <p class="short_description">`maxp` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.maxp.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_name" class="element ajax clickable class" data-toggle="collapse" data-target="#class_name .collapse">
+        <h1>name<a href="../classes/FontLib.Table.Type.name.html">¶</a></h1>
+        <p class="short_description">`name` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.name.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_nameRecord" class="element ajax clickable class" data-toggle="collapse" data-target="#class_nameRecord .collapse">
+        <h1>nameRecord<a href="../classes/FontLib.Table.Type.nameRecord.html">¶</a></h1>
+        <p class="short_description">Font table name record.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.nameRecord.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_os2" class="element ajax clickable class" data-toggle="collapse" data-target="#class_os2 .collapse">
+        <h1>os2<a href="../classes/FontLib.Table.Type.os2.html">¶</a></h1>
+        <p class="short_description">`OS/2` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.os2.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_post" class="element ajax clickable class" data-toggle="collapse" data-target="#class_post .collapse">
+        <h1>post<a href="../classes/FontLib.Table.Type.post.html">¶</a></h1>
+        <p class="short_description">`post` font table.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.Table.Type.post.html" class="more">« More »</a>    </div>
+
+                            </div>
+            
+    
+    
+                
+    
+        <ul class="breadcrumb">
+            <li><a href="../index.html"><i class="icon-th"></i></a></li>
+                
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.html">FontLib</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/FontLib.TrueType.html">TrueType</a>
+    </li>
+
+        </ul>
+
+        
+        
+                    <div class="namespace-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="class_Collection" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Collection .collapse">
+        <h1>Collection<a href="../classes/FontLib.TrueType.Collection.html">¶</a></h1>
+        <p class="short_description">TrueType collection font file.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.TrueType.Collection.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_File" class="element ajax clickable class" data-toggle="collapse" data-target="#class_File .collapse">
+        <h1>File<a href="../classes/FontLib.TrueType.File.html">¶</a></h1>
+        <p class="short_description">TrueType font file.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.TrueType.File.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_Header" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Header .collapse">
+        <h1>Header<a href="../classes/FontLib.TrueType.Header.html">¶</a></h1>
+        <p class="short_description">TrueType font file header.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.TrueType.Header.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_TableDirectoryEntry" class="element ajax clickable class" data-toggle="collapse" data-target="#class_TableDirectoryEntry .collapse">
+        <h1>TableDirectoryEntry<a href="../classes/FontLib.TrueType.TableDirectoryEntry.html">¶</a></h1>
+        <p class="short_description">TrueType table directory entry.</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/FontLib.TrueType.TableDirectoryEntry.html" class="more">« More »</a>    </div>
+
+                            </div>
+            
+    
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Mon, 04 Jul 2016 22:23:52 +0200.<br/>
+    </footer>
+    </body>
+</html>

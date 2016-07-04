@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; Markers
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/template.js" type="text/javascript"></script>
+        <script src="js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="index.html">WASA</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="namespaces/Dompdf.html">Dompdf</a></li>
+                                                                        <li><a href="namespaces/Svg.html">Svg</a></li>
+                                                                        <li><a href="namespaces/FontLib.html">FontLib</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <div class="row">
+        <div class="span4">
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">Navigation</li>
+                                                                                                                                                                                                                                                <li><a href="#include\dompdf\lib\php-svg-lib\src\Svg\Surface\CPdf.php"><i class="icon-file"></i> include\dompdf\lib\php-svg-lib\src\Svg\Surface\CPdf.php</a></li>
+                                                                                                                                                                                                                <li><a href="#include\dompdf\src\FrameDecorator\AbstractFrameDecorator.php"><i class="icon-file"></i> include\dompdf\src\FrameDecorator\AbstractFrameDecorator.php</a></li>
+                                                                                                <li><a href="#include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceGmagick.php"><i class="icon-file"></i> include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceGmagick.php</a></li>
+                                                                                                <li><a href="#include\dompdf\src\Css\Stylesheet.php"><i class="icon-file"></i> include\dompdf\src\Css\Stylesheet.php</a></li>
+                                                                                                                                                                                                                <li><a href="#include\dompdf\src\Css\Color.php"><i class="icon-file"></i> include\dompdf\src\Css\Color.php</a></li>
+                                                                                                <li><a href="#include\dompdf\lib\php-svg-lib\src\Svg\Style.php"><i class="icon-file"></i> include\dompdf\lib\php-svg-lib\src\Svg\Style.php</a></li>
+                                                                                                <li><a href="#include\dompdf\src\FrameDecorator\Page.php"><i class="icon-file"></i> include\dompdf\src\FrameDecorator\Page.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="#include\dompdf\src\FrameReflower\Page.php"><i class="icon-file"></i> include\dompdf\src\FrameReflower\Page.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="#include\dompdf\lib\php-svg-lib\tests\Svg\StyleTest.php"><i class="icon-file"></i> include\dompdf\lib\php-svg-lib\tests\Svg\StyleTest.php</a></li>
+                                                                                                <li><a href="#include\dompdf\src\Adapter\PDFLib.php"><i class="icon-file"></i> include\dompdf\src\Adapter\PDFLib.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="#include\dompdf\src\Dompdf.php"><i class="icon-file"></i> include\dompdf\src\Dompdf.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="#include\dompdf\src\Css\Style.php"><i class="icon-file"></i> include\dompdf\src\Css\Style.php</a></li>
+                                                                                                <li><a href="#include\dompdf\src\Frame\FrameTree.php"><i class="icon-file"></i> include\dompdf\src\Frame\FrameTree.php</a></li>
+                                                                                                                                                                                                                <li><a href="#include\dompdf\src\Adapter\GD.php"><i class="icon-file"></i> include\dompdf\src\Adapter\GD.php</a></li>
+                                                                                                <li><a href="#include\dompdf\src\LineBox.php"><i class="icon-file"></i> include\dompdf\src\LineBox.php</a></li>
+                                                                                                                                                                                                                <li><a href="#include\dompdf\src\Renderer\ListBullet.php"><i class="icon-file"></i> include\dompdf\src\Renderer\ListBullet.php</a></li>
+                                                                                                                                                        <li><a href="#include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfacePDFLib.php"><i class="icon-file"></i> include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfacePDFLib.php</a></li>
+                                                                                                                                                                                                                                                                        <li><a href="#include\dompdf\src\Css\AttributeTranslator.php"><i class="icon-file"></i> include\dompdf\src\Css\AttributeTranslator.php</a></li>
+                                                                                                                                                        <li><a href="#include\dompdf\src\Renderer\Text.php"><i class="icon-file"></i> include\dompdf\src\Renderer\Text.php</a></li>
+                                                                                                                                                        <li><a href="#include\dompdf\lib\php-svg-lib\src\Svg\Tag\Path.php"><i class="icon-file"></i> include\dompdf\lib\php-svg-lib\src\Svg\Tag\Path.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="#include\dompdf\src\FrameReflower\TableCell.php"><i class="icon-file"></i> include\dompdf\src\FrameReflower\TableCell.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="#include\dompdf\src\Frame\Factory.php"><i class="icon-file"></i> include\dompdf\src\Frame\Factory.php</a></li>
+                                                                                                <li><a href="#include\dompdf\lib\php-font-lib\src\FontLib\EOT\File.php"><i class="icon-file"></i> include\dompdf\lib\php-font-lib\src\FontLib\EOT\File.php</a></li>
+                                                                                                                                                        <li><a href="#include\dompdf\src\FrameReflower\Block.php"><i class="icon-file"></i> include\dompdf\src\FrameReflower\Block.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="#include\dompdf\src\Adapter\CPDF.php"><i class="icon-file"></i> include\dompdf\src\Adapter\CPDF.php</a></li>
+                                                                                                                                                                                                                                                                                                                                <li><a href="#include\dompdf\src\Cellmap.php"><i class="icon-file"></i> include\dompdf\src\Cellmap.php</a></li>
+                                                                                                                                                        <li><a href="#include\dompdf\src\FontMetrics.php"><i class="icon-file"></i> include\dompdf\src\FontMetrics.php</a></li>
+                                                                                                <li><a href="#include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceCpdf.php"><i class="icon-file"></i> include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceCpdf.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="#include\dompdf\lib\Cpdf.php"><i class="icon-file"></i> include\dompdf\lib\Cpdf.php</a></li>
+                                                                                                                                                        <li><a href="#include\dompdf\src\FrameReflower\AbstractFrameReflower.php"><i class="icon-file"></i> include\dompdf\src\FrameReflower\AbstractFrameReflower.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="#include\dompdf\lib\php-font-lib\src\FontLib\TrueType\File.php"><i class="icon-file"></i> include\dompdf\lib\php-font-lib\src\FontLib\TrueType\File.php</a></li>
+                                                                                                                                                                                                                <li><a href="#include\dompdf\src\FrameDecorator\TableCell.php"><i class="icon-file"></i> include\dompdf\src\FrameDecorator\TableCell.php</a></li>
+                                                                                                                                                                                                                                                                        <li><a href="#include\dompdf\src\FrameDecorator\Text.php"><i class="icon-file"></i> include\dompdf\src\FrameDecorator\Text.php</a></li>
+                                                                                                                                                                                                                <li><a href="#include\dompdf\src\FrameReflower\Text.php"><i class="icon-file"></i> include\dompdf\src\FrameReflower\Text.php</a></li>
+                                                                                                                                                                                                                                                                        <li><a href="#include\dompdf\lib\php-font-lib\src\FontLib\Table\Type\post.php"><i class="icon-file"></i> include\dompdf\lib\php-font-lib\src\FontLib\Table\Type\post.php</a></li>
+                                                                                                                                                        <li><a href="#include\dompdf\src\Renderer\AbstractRenderer.php"><i class="icon-file"></i> include\dompdf\src\Renderer\AbstractRenderer.php</a></li>
+                                                                    </ul>
+        </div>
+
+        <div class="span8">
+
+            <ul class="breadcrumb">
+                <li><a href="?"><i class="icon-map-marker"></i></a><span class="divider">\</span></li>
+                <li>Markers</li>
+            </ul>
+
+            
+            <div id="marker-accordion">
+                                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\lib\php-svg-lib\src\Svg\Surface\CPdf.php" id="include\dompdf\lib\php-svg-lib\src\Svg\Surface\CPdf.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-svg-lib\src\Svg\Surface\CPdf.php
+                                <span class="pull-right badge badge-info">5</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>2501</td>
+                                            <td>should we move font subset creation to CPDF::output? See notes in issue #750.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>2801</td>
+                                            <td>should actually keep track of states that have already been created...</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>3309</td>
+                                            <td>I don&#039;t know that this is sufficient for determining content length (i.e. what about transport compression?)</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>3330</td>
+                                            <td>Is this the correct value ... spec says 1#range-unit</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>4010</td>
+                                            <td>The pixel transformation doesn&#039;t work well with 8bit PNGs</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\FrameDecorator\AbstractFrameDecorator.php" id="include\dompdf\src\FrameDecorator\AbstractFrameDecorator.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameDecorator\AbstractFrameDecorator.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>745</td>
+                                            <td>What version is the best : this one or the one in ListBullet ?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceGmagick.php" id="include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceGmagick.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceGmagick.php
+                                <span class="pull-right badge badge-info">3</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>97</td>
+                                            <td>Implement beginPath() method.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>128</td>
+                                            <td>Implement drawImage() method.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>166</td>
+                                            <td>Implement quadraticCurveTo() method.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\src\Css\Stylesheet.php" id="include\dompdf\src\Css\Stylesheet.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Css\Stylesheet.php
+                                <span class="pull-right badge badge-info">6</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>611</td>
+                                            <td></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>612</td>
+                                            <td></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>720</td>
+                                            <td>this will break if $value contains quoted strings</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>836</td>
+                                            <td>this is not particularly robust...</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>1040</td>
+                                            <td>handle &#039;{&#039; within strings, e.g. [attr=&quot;string {}&quot;]</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>1185</td>
+                                            <td>Is this causing problems for imported CSS files? There are some &#039;./none&#039; references when running the test cases.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\Css\Color.php" id="include\dompdf\src\Css\Color.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Css\Color.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>169</td>
+                                            <td>should/could verify this.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>210</td>
+                                            <td>not currently using transparency</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\lib\php-svg-lib\src\Svg\Style.php" id="include\dompdf\lib\php-svg-lib\src\Svg\Style.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-svg-lib\src\Svg\Style.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>330</td>
+                                            <td>cm, mm, pc, in, etc</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\src\FrameDecorator\Page.php" id="include\dompdf\src\FrameDecorator\Page.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameDecorator\Page.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>366</td>
+                                            <td>Checking widows is tricky without having laid out the</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>485</td>
+                                            <td>If the row is taller than the page and</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\src\FrameReflower\Page.php" id="include\dompdf\src\FrameReflower\Page.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameReflower\Page.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>54</td>
+                                            <td>RTL</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>63</td>
+                                            <td>RTL</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="package-contents">
+                            <a name="include\dompdf\lib\php-svg-lib\tests\Svg\StyleTest.php" id="include\dompdf\lib\php-svg-lib\tests\Svg\StyleTest.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-svg-lib\tests\Svg\StyleTest.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>41</td>
+                                            <td></td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\src\Adapter\PDFLib.php" id="include\dompdf\src\Adapter\PDFLib.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Adapter\PDFLib.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>184</td>
+                                            <td>fetch PDFLib version information for the producer field</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>582</td>
+                                            <td></td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                            <div class="package-contents">
+                            <a name="include\dompdf\src\Dompdf.php" id="include\dompdf\src\Dompdf.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Dompdf.php
+                                <span class="pull-right badge badge-info">5</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>429</td>
+                                            <td>Determine character encoding, switch to UTF8, update meta tag. Need better http/file stream encoding detection, currently relies on text or meta tag.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>471</td>
+                                            <td>roll this into the encoding detection using UTF-8/16/32 BOM (http://us2.php.net/manual/en/function.mb-detect-encoding.php#91051)?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>748</td>
+                                            <td>We really shouldn&#039;t be doing this; properties were already set in the constructor. We should add Canvas methods to set the page size and orientation after instantiaion (see #1059).</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>771</td>
+                                            <td>This only captures the text of the stylesheet declaration,</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>425</td>
+                                            <td>use the $encoding variable</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\Css\Style.php" id="include\dompdf\src\Css\Style.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Css\Style.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>549</td>
+                                            <td>em:ex ratio?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>1943</td>
+                                            <td>handle partial values</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\src\Frame\FrameTree.php" id="include\dompdf\src\Frame\FrameTree.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Frame\FrameTree.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>162</td>
+                                            <td>find a better way to deal with it...</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>177</td>
+                                            <td>temporary hack, preferably we will improve rendering of sequential #text nodes</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\Adapter\GD.php" id="include\dompdf\src\Adapter\GD.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Adapter\GD.php
+                                <span class="pull-right badge badge-info">4</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>268</td>
+                                            <td></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>751</td>
+                                            <td>word spacing</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>825</td>
+                                            <td>word spacing</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>867</td>
+                                            <td>word spacing</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\src\LineBox.php" id="include\dompdf\src\LineBox.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\LineBox.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>144</td>
+                                            <td>smelly hack</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\Renderer\ListBullet.php" id="include\dompdf\src\Renderer\ListBullet.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Renderer\ListBullet.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>237</td>
+                                            <td>I thought it should be 2, but 4 gives better results</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfacePDFLib.php" id="include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfacePDFLib.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfacePDFLib.php
+                                <span class="pull-right badge badge-info">3</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>114</td>
+                                            <td>Implement beginPath() method.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>145</td>
+                                            <td>Implement drawImage() method.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>189</td>
+                                            <td>not accurate</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                            <div class="package-contents">
+                            <a name="include\dompdf\src\Css\AttributeTranslator.php" id="include\dompdf\src\Css\AttributeTranslator.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Css\AttributeTranslator.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>426</td>
+                                            <td>unsupported</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>589</td>
+                                            <td>? we don&#039;t actually set the font size of anything here, just</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\src\Renderer\Text.php" id="include\dompdf\src\Renderer\Text.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Renderer\Text.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>81</td>
+                                            <td>Instead of using the tallest frame to position,</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\lib\php-svg-lib\src\Svg\Tag\Path.php" id="include\dompdf\lib\php-svg-lib\src\Svg\Tag\Path.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-svg-lib\src\Svg\Tag\Path.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>343</td>
+                                            <td>optimize this</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>363</td>
+                                            <td>optimize this</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\src\FrameReflower\TableCell.php" id="include\dompdf\src\FrameReflower\TableCell.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameReflower\TableCell.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>44</td>
+                                            <td>?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\Frame\Factory.php" id="include\dompdf\src\Frame\Factory.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Frame\Factory.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>174</td>
+                                            <td>should throw some sort of warning or something?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\lib\php-font-lib\src\FontLib\EOT\File.php" id="include\dompdf\lib\php-font-lib\src\FontLib\EOT\File.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-font-lib\src\FontLib\EOT\File.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>61</td>
+                                            <td>Read font data ...</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\src\FrameReflower\Block.php" id="include\dompdf\src\FrameReflower\Block.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameReflower\Block.php
+                                <span class="pull-right badge badge-info">3</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>326</td>
+                                            <td>overflow hidden</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>338</td>
+                                            <td>this should probably be moved to a seperate function as per</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>644</td>
+                                            <td>handle when floating elements don&#039;t fit</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\Adapter\CPDF.php" id="include\dompdf\src\Adapter\CPDF.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Adapter\CPDF.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>12</td>
+                                            <td>Need to sanity check inputs to this class</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                <div class="package-contents">
+                            <a name="include\dompdf\src\Cellmap.php" id="include\dompdf\src\Cellmap.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Cellmap.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>678</td>
+                                            <td>try to avoid putting this dummy value when table-layout:fixed</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>687</td>
+                                            <td>try to avoid putting this dummy value when table-layout:fixed</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\src\FontMetrics.php" id="include\dompdf\src\FontMetrics.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FontMetrics.php
+                                <span class="pull-right badge badge-info">2</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>128</td>
+                                            <td>tempoarary define constants for cache files &lt;= v0.6.2</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>135</td>
+                                            <td>temporary step for font cache created before the font cache fix</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceCpdf.php" id="include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceCpdf.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-svg-lib\src\Svg\Surface\SurfaceCpdf.php
+                                <span class="pull-right badge badge-info">3</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>114</td>
+                                            <td>Implement beginPath() method.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>144</td>
+                                            <td>Implement drawImage() method.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>232</td>
+                                            <td>not accurate</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="package-contents">
+                            <a name="include\dompdf\lib\Cpdf.php" id="include\dompdf\lib\Cpdf.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\Cpdf.php
+                                <span class="pull-right badge badge-info">6</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>2552</td>
+                                            <td>should we move font subset creation to CPDF::output? See notes in issue #750.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>2638</td>
+                                            <td>php-font-lib is not grabbing this value, so we&#039;ll fake it and use the Ascender value // &#039;CapHeight&#039;</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>2852</td>
+                                            <td>should actually keep track of states that have already been created...</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>3508</td>
+                                            <td>I don&#039;t know that this is sufficient for determining content length (i.e. what about transport compression?)</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>3530</td>
+                                            <td>Is this the correct value ... spec says 1#range-unit</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>4340</td>
+                                            <td>The pixel transformation doesn&#039;t work well with 8bit PNGs</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\src\FrameReflower\AbstractFrameReflower.php" id="include\dompdf\src\FrameReflower\AbstractFrameReflower.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameReflower\AbstractFrameReflower.php
+                                <span class="pull-right badge badge-info">5</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>390</td>
+                                            <td>do something here</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>393</td>
+                                            <td>do something else here</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>396</td>
+                                            <td></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>398</td>
+                                            <td></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>442</td>
+                                            <td>This is currently too late because the font subset has already been generated.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\lib\php-font-lib\src\FontLib\TrueType\File.php" id="include\dompdf\lib\php-font-lib\src\FontLib\TrueType\File.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-font-lib\src\FontLib\TrueType\File.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>207</td>
+                                            <td></td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\FrameDecorator\TableCell.php" id="include\dompdf\src\FrameDecorator\TableCell.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameDecorator\TableCell.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>75</td>
+                                            <td>this isn&#039;t right</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                            <div class="package-contents">
+                            <a name="include\dompdf\src\FrameDecorator\Text.php" id="include\dompdf\src\FrameDecorator\Text.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameDecorator\Text.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>58</td>
+                                            <td>this should be in a child class (and is incorrect)</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="include\dompdf\src\FrameReflower\Text.php" id="include\dompdf\src\FrameReflower\Text.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\FrameReflower\Text.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>FIXME</td>
+                                            <td>313</td>
+                                            <td>Include non-breaking spaces?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                            <div class="package-contents">
+                            <a name="include\dompdf\lib\php-font-lib\src\FontLib\Table\Type\post.php" id="include\dompdf\lib\php-font-lib\src\FontLib\Table\Type\post.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\lib\php-font-lib\src\FontLib\Table\Type\post.php
+                                <span class="pull-right badge badge-info">4</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>70</td>
+                                            <td></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>78</td>
+                                            <td></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>130</td>
+                                            <td></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>138</td>
+                                            <td></td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="include\dompdf\src\Renderer\AbstractRenderer.php" id="include\dompdf\src\Renderer\AbstractRenderer.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                include\dompdf\src\Renderer\AbstractRenderer.php
+                                <span class="pull-right badge badge-info">1</span>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>492</td>
+                                            <td>Solve rendering where one corner is beveled (radius == 0), one corner isn&#039;t.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Mon, 04 Jul 2016 22:24:03 +0200.<br/>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+.ajax-load{
+	cursor:pointer;
+}
+
+#mainContent{
+	padding:14px;
+}
+
+#analysisContent{
+	padding:15px;
+}
+
+#analysisContent .sidebar{
+	height: 100%
+}
+
+
+#promo{
+	padding-top:30px;
+	padding-bottom:30px;
+	border-bottom: 1px solid #ccc;
+}
+
+.bulletDiv{
+	margin: 0 auto;
+	text-align: center;
+}
+.bulletDiv .imgBullet{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#publicAnalysis{
+	padding-top:50px;
+}
+#publicAnalysis table{
+	text-align:center;
+}
+
+
+#jumbotron{
+	background-color: #157EFB;
+	color:#fff;
+	text-align:center;
+
+}
+#jumbotron p{
+	font-size:10pt;
+}
+.tl{
+	text-align:left;
+}
